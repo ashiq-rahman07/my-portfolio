@@ -54,6 +54,9 @@ const Portfolio = () => {
           {portfolios.map(({ id, src,path }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"

@@ -59,6 +59,8 @@ const SocialLinks = () => {
             }
           >
             <a
+              data-aos="fade-down"
+              data-aos-duration="2000"
               href={href}
               className="flex justify-between items-center w-full text-white"
               download={download}
