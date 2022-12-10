@@ -1,36 +1,39 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+
+
+import reactApp from "../assets/portfolio/reacapp.png"
+import techAcademy from "../assets/portfolio/techaca.png"
+import tvHouse from "../assets/portfolio/tvhouse.png"
+import learners from "../assets/portfolio/learners.png"
+import dentFit from "../assets/portfolio/dentfit.png"
+import fitness from "../assets/portfolio/fitness.png"
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: reactApp,
+      path:'https://education-corner-quiz.netlify.app/'
     },
     {
       id: 2,
-      src: reactParallax,
+      src: techAcademy,
     },
     {
       id: 3,
-      src: navbar,
+      src: tvHouse,
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: learners,
     },
     {
       id: 5,
-      src: installNode,
+      src: dentFit,
     },
     {
       id: 6,
-      src: reactWeather,
+      src: fitness,
     },
   ];
 
@@ -48,7 +51,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src,path }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -57,7 +60,7 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
+                <a href={path}>Live Site</a>
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
