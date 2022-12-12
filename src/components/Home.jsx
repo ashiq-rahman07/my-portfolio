@@ -26,19 +26,35 @@ const Home = () => {
               React, Tailwind, Next JS and GraphQL.
             </p>
 
-            <div>
-              <Link
-                to="portfolio"
-                smooth
-                duration={500}
-                className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-              >
-                Portfolio
-                <span className="group-hover:rotate-90 duration-300">
-                  <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-                </span>
-              </Link>
-            </div>
+           <div className="flex gap-3">
+              <div>
+                <Link
+                  to="portfolio"
+                  smooth
+                  duration={500}
+                  className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+                >
+                  Portfolio
+                  <span className="group-hover:rotate-90 duration-300">
+                    <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                  </span>
+                </Link>
+              </div>
+              <div>
+                <a
+                  href="https://drive.google.com/file/d/1wOhiZ6X6EXEyzUjUb5Gz_MIuiPqkSxv0/view?usp=sharing"
+                  target="_blank" rel="noreferrer"
+                  smooth
+                  duration={500}
+                  className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+                >
+                  Resume
+                  <span className="group-hover:rotate-90 duration-300">
+                    <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                  </span>
+                </a>
+              </div>
+           </div>
           </div>
 
           <div data-aos="fade-left" data-aos-duration="2000">
